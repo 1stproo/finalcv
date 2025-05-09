@@ -5,6 +5,70 @@ body{
     
     
 }
+/* Cloud Positioning and Animation */
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+    animation: float 8s ease-in-out infinite;
+}
+
+.top-cloud-2 {
+    position: absolute;
+    right: 100px;
+    top: 120px;
+    /* transform: scale(0.7); */
+
+    animation: float 12s ease-in-out infinite 1s;
+}
+
+.top-cloud-3 {
+    position: absolute;
+    left: 200px;
+    top: 70px;
+    /* transform: scale(0.6); */
+    
+    animation: float 10s ease-in-out infinite 2s;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 50px;
+    animation: float 9s ease-in-out infinite 1.5s;
+}
+
+.bottom-cloud-2 {
+    position: absolute;
+    left: 150px;
+    bottom: 100px;
+    /* transform: scale(0.5); */
+
+    animation: float 11s ease-in-out infinite 0.5s;
+}
+
+.title-decoration {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #66BFBF, transparent);
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+/* Cloud Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-15px) translateX(10px); }
+    100% { transform: translateY(0) translateX(0); }
+}
+
+/* Make sure the identity section has proper positioning for clouds */
+.identity {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
 
 h1 {
     margin: 70px auto 0 auto;
@@ -145,4 +209,18 @@ a:hover {
 
 .message-con {
     margin: auto auto 30px auto;
+}
+.achievement-icon{
+    width: 5%;
+    /* transform: rotate(270deg); */
+
+}
+.project-icon{
+    width: 10%;
+    border-radius: 30%;    
+}
+.certificates-icon{
+    width: 9%;
+    border-radius: 30%;    
+
 }
